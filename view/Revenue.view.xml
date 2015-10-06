@@ -1,0 +1,37 @@
+<core:View controllerName="com.sap.view.Revenue" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" xmlns:u="sap.ui.unified" xmlns="sap.m">
+	<u:Shell id="myShell">
+		<u:headEndItems>
+			<u:ShellHeadItem icon="sap-icon://log" press="handleLogoffPress" tooltip="Logoff"/>
+		</u:headEndItems>
+
+	<Page enableScrolling="false" title="Revenue" showNavButton="true" navButtonPress="pressBackButton">
+		<content>
+
+			<ToolbarSeparator />
+			<HBox justifyContent="Center">
+			<Image xmlns="sap.m"
+				id="id"
+				src="/img/graph.png"
+				width=""
+				height=""
+				decorative="true"
+				alt=""
+				useMap=""
+				densityAware="true"
+				activeSrc=""
+				mode="Image"
+				backgroundSize="cover"
+				backgroundPosition="initial"
+				backgroundRepeat="no-repeat"
+				tap=""
+				press="">
+					<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+					<dependents></dependents> <!-- sap.ui.core.Control, since 1.19 -->
+					
+			</Image>
+			</HBox>
+		</content>
+	</Page>
+	</u:Shell>
+</core:View>

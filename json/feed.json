@@ -1,0 +1,25 @@
+{
+	"EntryCollection": [
+		{	
+			"Author": "Iwa Marvel",
+			"AuthorPicUrl": "http://upload.wikimedia.org/wikipedia/commons/a/aa/Dronning_victoria.jpg",
+			"Type": "post",
+			"Date": "2015-09-29",
+			"Text": "test-resources/sap/m/demokit/sample/UploadCollection/LinkedDocuments/Screen.mp4"
+		},
+		{	
+			"Author": "Iwa Marvel",
+			"AuthorPicUrl": "http://upload.wikimedia.org/wikipedia/commons/a/aa/Dronning_victoria.jpg",
+			"Type": "post",
+			"Date": "2015-09-29",
+			"Text": "test-resources/sap/m/demokit/sample/UploadCollection/LinkedDocuments/Notes.mp3"
+		},
+		{	
+			"Author": "Rosana Figunges",
+			"AuthorPicUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/JerryLee_Lewis_1973.jpg/115px-JerryLee_Lewis_1973.jpg",
+			"Type": "post",
+			"Date": "2015-09-29",
+			"Text": "test-resources/sap/m/demokit/sample/UploadCollection/LinkedDocuments/Notes3.mp3"
+		}
+	]
+}	

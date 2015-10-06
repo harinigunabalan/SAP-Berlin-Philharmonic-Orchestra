@@ -1,0 +1,39 @@
+<core:View controllerName="com.sap.view.index" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	height="100%">
+	<Page enableScrolling="false" title="Index">
+	<content>
+		<Panel>
+		<headerToolbar>
+			<Toolbar height="3rem">
+				<Title text="Welcome, Iwa!"/>
+				<ToolbarSpacer />
+				<Button icon="sap-icon://drop-down-list" press="openSettings" />
+			</Toolbar>
+		</headerToolbar>
+		<content>
+		<TileContainer height="5rem" id="container0" tileDelete="handleTileDelete">
+			<StandardTile
+				icon="sap-icon://{icon}"
+				title="Education"
+				press="onClickEducation"/>
+			<StandardTile
+				icon="sap-icon://{icon}"
+				title="Application"
+				press="onClickApplication"/>
+			<StandardTile
+				icon="sap-icon://{icon}"
+				title="Collaboration"
+				press="onClickCollaboration"/>
+			<StandardTile
+				icon="sap-icon://{icon}"
+				title="Profile"
+				press="onClickProfile"/>
+		</TileContainer>
+		</content>
+		</Panel>
+
+	</content>
+	</Page>
+</core:View>

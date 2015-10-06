@@ -1,0 +1,86 @@
+<core:View controllerName="com.sap.view.candidatePool" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:semantic="sap.m.semantic" xmlns:u="sap.ui.unified" >
+		<u:Shell id="myShell">
+      <u:headEndItems>
+      <u:ShellHeadItem
+          tooltip="Configuration"
+          icon="sap-icon://menu2"
+          press="openSettings" />  
+      </u:headEndItems>
+      
+	<SplitContainer>
+		<masterPages>
+			<semantic:MasterPage title="Candidate Pool"  showNavButton="true" navButtonPress="pressBackButton">
+					
+					
+	<List
+		id="ProductList"
+		items="{/applicants}">
+	
+			<StandardListItem description="{Points}" type="Active" icon="{PicUrl}" iconDensityAware="false" iconInset="false" title="{Name}" press="onDetailPress" />
+			</List>
+					
+			</semantic:MasterPage>
+		</masterPages>
+	
+		<detailPages>
+			<semantic:DetailPage
+					title="Details about each candidate">
+			
+			<Panel class="sapUiResponsiveContentPadding">		
+		
+			<Text text="Name:  " 	class="sapUiSmallMarginBeginEnd sapUiSmallMarginTop" /> 
+			<Text id="dynamicName" text="{Name}"/>
+			
+			<Text text="About:  " 	class="sapUiSmallMarginBeginEnd sapUiSmallMarginTop"/> 
+			<Text id="dynamicDesc" text="{About}"/>
+			
+			<Text text="Points:  " 	class="sapUiSmallMarginBeginEnd sapUiSmallMarginTop"/> 
+			<Text id="dynamicPoints" text="{Points}"/>
+			
+			<Text text="Rating:  " 	class="sapUiSmallMarginBeginEnd sapUiSmallMarginTop"/> 
+			<Text id="dynamicRating" text="{Rating}"/>
+			
+			<Text text="Country:  " 	class="sapUiSmallMarginBeginEnd sapUiSmallMarginTop"/> 
+			<Text id="dynamicCountry" text="{Country}"/>
+			
+				
+		</Panel>
+				
+				<semantic:positiveAction>
+				
+					<semantic:PositiveAction text="Select Candidate" press="onSemanticButtonPress"/>
+					<semantic:PositiveAction text="Vote Candidate" press="onSemanticButtonPress"/>
+				</semantic:positiveAction>
+	
+				<semantic:flagAction>
+					<semantic:FlagAction press="onFlag"/>
+				</semantic:flagAction>
+				<semantic:favoriteAction>
+					<semantic:FavoriteAction press="onFavourite"/>
+				</semantic:favoriteAction>
+				<semantic:sendEmailAction>
+					<semantic:SendEmailAction press="sendEmailtoFriend"/>
+				</semantic:sendEmailAction>
+				
+
+				<semantic:customFooterContent>
+					<OverflowToolbarButton icon="sap-icon://settings" text="Settings" press="onPress"/>
+					<OverflowToolbarButton icon="sap-icon://video" text="Video" press="onPress"/>
+				</semantic:customFooterContent>
+
+				<semantic:customShareMenuContent>
+					<Button text="CustomShareBtn1" icon="sap-icon://color-fill" press="onPress"/>
+					<Button text="CustomShareBtn2" icon="sap-icon://crop" press="onPress"/>
+				</semantic:customShareMenuContent>
+
+			</semantic:DetailPage>
+
+		</detailPages>
+
+	</SplitContainer>
+			
+			
+	
+	</u:Shell>
+</core:View>

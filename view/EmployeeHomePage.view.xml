@@ -1,0 +1,24 @@
+<core:View controllerName="com.sap.view.EmployeeHomePage" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" xmlns:u="sap.ui.unified" xmlns="sap.m">
+	<u:Shell id="myShell">
+		<u:headEndItems>
+			<u:ShellHeadItem icon="sap-icon://log" press="handleLogoffPress" tooltip="Logoff"/>
+		</u:headEndItems>
+		<Page title="Admin Page" width="100%">
+			<content width="100%">
+				<VBox justifyContent="Center" width="100%" >
+					<FeedInput class="sapUiSmallMarginTopBottom" icon="http://upload.wikimedia.org/wikipedia/commons/a/aa/Dronning_victoria.jpg" post="onPost"/>
+					<List items="{/EntryCollection}" showSeparators="Inner">
+						<FeedListItem icon="{AuthorPicUrl}" iconDensityAware="false" iconPress="onIconPress" info="{Type}" sender="{Author}"
+							senderPress="onSenderPress" text="{Text}" timestamp="{Date}"/>
+					</List>
+				</VBox>
+				<TileContainer height="60%" id="container" tileDelete="handleTileDelete">
+					<StandardTile icon="sap-icon://manager" press="onClickApplication" title="Recuitment Portal"/>
+					<StandardTile icon="sap-icon://marketing-campaign" press="" title="Rate &amp; Market"/>
+					<StandardTile icon="sap-icon://money-bills" press="onClickRevenue" title="Revenue"/>
+				</TileContainer>
+			</content>
+		</Page>
+	</u:Shell>
+</core:View>

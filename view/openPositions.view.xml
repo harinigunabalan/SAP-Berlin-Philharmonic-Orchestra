@@ -1,0 +1,125 @@
+<core:View controllerName="com.sap.view.openPositions" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:u="sap.ui.unified" 
+	xmlns:semantic="sap.m.semantic"
+	>
+	<u:Shell id="myShell">
+      <u:headEndItems>
+      <u:ShellHeadItem
+          tooltip="Configuration"
+          icon="sap-icon://menu2"
+          press="openSettings" />  
+      </u:headEndItems>
+      
+	<SplitContainer>
+		<masterPages>
+			<semantic:MasterPage title="Available Open Positions" showNavButton="true" navButtonPress="pressBackButton">
+					
+					
+	<List
+		id="ProductList"
+		items="{/OpenPositions}">
+	
+			<StandardListItem description="{ProductId}" type="Active" icon="{ProductPicUrl}" iconDensityAware="false" iconInset="false" title="{Name}" press="onDetailPress" />
+			</List>
+					
+			</semantic:MasterPage>
+		</masterPages>
+	
+		<detailPages>
+			<semantic:DetailPage
+					title="Job Position Details">
+			
+			<Panel class="sapUiResponsiveContentPadding">		
+			
+			<Text id="dynamicDesc" text="{Description}"/>
+			
+				<Text
+		class="sapUiSmallMarginBeginEnd sapUiSmallMarginTop"
+		text="Musicians are involved in creating and/or performing music in a variety of genres. They can be composers, instrumentalists and/or singers who perform either in the studio or before a live audience." />
+		
+		
+			<Text
+		class="sapUiSmallMarginBeginEnd sapUiSmallMarginTop"
+		text="Musicians may work on their own, as freelance artists, in collaboration with others, or as a salaried member of a:
+
+orchestra;
+opera company;
+choir;
+theatrical ensemble;
+band." />
+		
+		
+			<Text
+		class="sapUiSmallMarginBeginEnd sapUiSmallMarginTop"
+		text="Competition in the musical field is high and musicians need to dedicate hours of practice to maintain and develop their skill, whatever their preferred style.
+
+They may need to diversify and branch out into other styles of music in order to enhance their employability." />
+		
+		
+			<Text
+		class="sapUiSmallMarginBeginEnd sapUiSmallMarginTop"
+		text="Typical work activities
+Genres of music are many and varied and some activities will differ between musicians working in the classical field and those performing in rock bands. However, the following tasks can apply to all musicians:" />
+		
+		
+			<Text
+		class="sapUiSmallMarginBeginEnd sapUiSmallMarginTop"
+		text="performing in concerts and participating in recording sessions;
+practising regularly;
+preparing for auditions;
+preparing for and attending rehearsals;
+maintaining the instrument;
+setting up/tuning the instrument and other equipment as well as arranging for its transportation, if it is large;
+learning new pieces of music to extend their repertoire;
+handling the administration of business activities such as promotion, handling accounts, negotiating fees and organising distribution of their recordings both offline and online, e.g. making their music available for sale on iTunes;
+seeking out and liaising with new venues in which to perform;
+delivering educational work in schools, businesses and the wider community." />
+		
+		
+			<Text
+		class="sapUiSmallMarginBeginEnd sapUiSmallMarginTop"
+		text="Many musicians also teach, either individual pupils or peripatetic teaching in schools/colleges, in order to enhance their income as a performer." />
+
+	<MessageStrip
+		class="sapUiSmallMarginBeginEnd sapUiSmallMarginTop"
+		type="Warning"
+		text="Note: We encourage you to apply early! Application Deadline: 31.12.2015. Applications received after the deadline will not be considered!" />
+				
+		</Panel>
+				
+				<semantic:positiveAction>
+					<semantic:PositiveAction text="Apply" press="onSemanticButtonPress"/>
+				</semantic:positiveAction>
+	
+				<semantic:flagAction>
+					<semantic:FlagAction press="onFlag"/>
+				</semantic:flagAction>
+				<semantic:favoriteAction>
+					<semantic:FavoriteAction press="onFavourite"/>
+				</semantic:favoriteAction>
+				<semantic:sendEmailAction>
+					<semantic:SendEmailAction press="sendEmailtoFriend"/>
+				</semantic:sendEmailAction>
+				
+
+				<semantic:customFooterContent>
+					<OverflowToolbarButton icon="sap-icon://settings" text="Settings" press="onPress"/>
+					<OverflowToolbarButton icon="sap-icon://video" text="Video" press="onPress"/>
+				</semantic:customFooterContent>
+
+				<semantic:customShareMenuContent>
+					<Button text="Share on YouTube" icon="sap-icon://color-fill" press="onPress"/>
+					<Button text="Share on Facebook" icon="sap-icon://crop" press="onPress"/>
+				</semantic:customShareMenuContent>
+
+			</semantic:DetailPage>
+
+		</detailPages>
+
+	</SplitContainer>
+			
+			
+	
+	</u:Shell>
+	
+</core:View>

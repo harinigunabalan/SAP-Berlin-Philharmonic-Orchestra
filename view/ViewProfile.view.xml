@@ -1,0 +1,40 @@
+<core:View controllerName="com.sap.view.ViewProfile" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	<Page title="My Profile" showNavButton="true" navButtonPress="pressBackButton">
+		<content>
+		
+			<Panel>
+			<headerToolbar>
+				<Toolbar height="3rem">
+					<Title text=""/>
+					<ToolbarSpacer />
+					<Button icon="sap-icon://drop-down-list" press="openSettings" />
+				</Toolbar>
+			</headerToolbar>
+			<content>
+			</content>
+			</Panel>
+
+			<core:Fragment fragmentName="com.sap.view.ViewProfile" type="XML"/>
+			
+			<UploadCollection beforeUploadStarts="onBeforeUploadStarts" change="onChange" fileDeleted="onFileDeleted" fileRenamed="onFileRenamed"
+				fileSizeExceed="onFileSizeExceed" filenameLengthExceed="onFilenameLengthExceed" id="UploadCollection" items="{/items}" maximumFileSize="10"
+				maximumFilenameLength="55" multiple="true"  numberOfAttachmentsText="Upload Videos/Recordings " showSeparators="All" typeMissmatch="onTypeMissmatch"
+				uploadComplete="onUploadComplete" uploadTerminated="onUploadTerminated">
+				<items>
+					<UploadCollectionItem attributes="{attributes}" documentId="{documentId}" enableDelete="{enableDelete}" enableEdit="{enableEdit}"
+						fileName="{fileName}" mimeType="{mimeType}" statuses="{statuses}" thumbnailUrl="{thumbnailUrl}" url="{url}" visibleDelete="{visibleDelete}"
+						visibleEdit="{visibleEdit}">
+						<attributes>
+							<ObjectAttribute active="{active}" text="{path : 'text', formatter : '.formatAttribute'}" textDirection="{textDirection}" title="{title}"/>
+						</attributes>
+						<statuses>
+							<ObjectStatus icon="{icon}" iconDensityAware="{iconDensityAware}" state="{state}" text="{text}" textDirection="{textDirection}"
+								title="{title}"/>
+						</statuses>
+					</UploadCollectionItem>
+				</items>
+			</UploadCollection>
+		</content>
+	</Page>
+</core:View>

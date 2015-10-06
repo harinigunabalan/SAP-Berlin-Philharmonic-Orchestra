@@ -1,0 +1,88 @@
+<core:View controllerName="com.sap.view.collaboration" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	<Page title="Collaboration" showNavButton="true" navButtonPress="pressBackButton">
+		<content>
+		
+		<Panel>
+		<headerToolbar>
+			<Toolbar height="3rem">
+				<Title text="Socialize!"/>
+				<ToolbarSpacer />
+				<Button icon="sap-icon://drop-down-list" press="openSettings" />
+			</Toolbar>
+		</headerToolbar>
+		<content>
+		</content>
+		</Panel>
+		
+			<IconTabBar class="sapUiResponsiveContentPadding" id="idIconTabBar" select="handleIconTabBarSelect">
+				<items>
+					<IconTabFilter count="{/ProductCollectionStats/Counts/Weight/Ok}" icon="sap-icon://newspaper" iconColor="Positive" key="News" text="News" id="news">
+						
+							<StandardListItem description="DIGI TALENT SEARCH COMPETITION" 
+							type="Active"
+							icon="sap-icon://newspaper"
+							title="Berliner Philharmoniker is looking for the brightest talents. "
+							press="onCompetitionPress"></StandardListItem>
+						
+						<StandardListItem description="Britney Spears in Europe" icon="sap-icon://newspaper"
+							title="In Mid of 2016 Britney Spears will start her Europe Tour "></StandardListItem>
+							
+							<StandardListItem description="Join the Tour of Berliner Philharmoniker 2016" icon="sap-icon://newspaper"
+							title="Tour Dates for Berliner Philharmoniker 2016 published "></StandardListItem>
+							
+							<StandardListItem description="Bruce Springsteen Tour overbooked after 1 hour" icon="sap-icon://newspaper"
+							title="The Boss starts his last World Tour "></StandardListItem>
+							
+							<StandardListItem description="U2 live at London" icon="sap-icon://newspaper"
+							title="Get all Tour Infos and watch exclusive previews "></StandardListItem>
+							
+					</IconTabFilter>
+					<IconTabFilter count="{/ProductCollectionStats/Counts/Weight/Heavy}" icon="sap-icon://building" iconColor="Critical" key="Company"
+						text="Company">
+						<ObjectListItem icon="sap-icon://building" id="productitem-small-0" title="Sony Music Entertainment "></ObjectListItem>
+						<ObjectListItem icon="sap-icon://building" id="productitem-small-1" title="Warner Music Group"></ObjectListItem>
+						<ObjectListItem icon="sap-icon://building" id="productitem-small-2" title="Universal Music Group"></ObjectListItem>
+						<ObjectListItem icon="sap-icon://building" id="productitem-small-3" title="EMI"></ObjectListItem>
+						
+					</IconTabFilter>
+					<IconTabFilter count="{/ProductCollectionStats/Counts/Weight/Overweight}" icon="sap-icon://calendar" iconColor="Negative" key="Events"
+						text="Events">
+						<StandardListItem icon="sap-icon://calendar" info="Sa 10 Jan 2016 The O2 Arena" infoState="None" title="Concert at Opera in Vienna"></StandardListItem>
+						<StandardListItem icon="sap-icon://calendar" info="Fr 12 Jan 2016 Munich Olympia Park" infoState="None" title="Ellie Goulding"></StandardListItem>
+						<StandardListItem icon="sap-icon://calendar" info="Sa.30.Jan 2016 Mannheim SAP Arena" infoState="None" title="Bruce Springsteen"></StandardListItem>
+						<StandardListItem icon="sap-icon://calendar" info="Sa.05.Feb 2016 Vienna Opera" infoState="None" title="Berliner Philharmoniker"></StandardListItem>
+						<StandardListItem icon="sap-icon://calendar" info="Fr.11.Feb 2016 Manchester Old Trafford" infoState="None" title="Foreigner"></StandardListItem>
+					</IconTabFilter>
+				</items>
+			</IconTabBar>
+			
+			<TextArea xmlns="sap.m"
+				id="postText"
+				value=""
+				width=""
+				enabled="true"
+				valueState="None"
+				name=""
+				placeholder="Communicate!"
+				editable="true"
+				valueStateText=""
+				showValueStateMessage="true"
+				textAlign="Initial"
+				textDirection="Inherit"
+				rows="2"
+				cols="20"
+				height=""
+				maxLength="0"
+				wrapping=""
+				valueLiveUpdate="false"
+				change=""
+				liveChange="">
+					<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+					<dependents></dependents> <!-- sap.ui.core.Control, since 1.19 -->
+					
+			</TextArea>
+			<Button text="Post" press="sendPost"></Button>
+		</content>
+	</Page>
+</core:View>

@@ -1,0 +1,31 @@
+<core:View controllerName="com.sap.view.classic" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	<Page navButtonPress="pressBackButton" showNavButton="true"  title="Violin Classic">
+		<content>
+			<l:VerticalLayout class="sapUiContentPadding" width="100%">
+				<l:content>
+					<List headerText="Offered Courses">
+						<DisplayListItem label="1. Introduction to the volin Music"/>
+						<DisplayListItem label="2. Learn Basic"/>
+						<DisplayListItem label="3. Go for Advanced Courses"/>
+					</List>
+				</l:content>
+			</l:VerticalLayout>
+			<l:VerticalLayout class="sapUiContentPadding" width="100%">
+				<l:content>
+					<List headerText="Mentor">
+						<DisplayListItem label="Jen Meuller"/>
+						<DisplayListItem label="David Kopf"/>
+					</List>
+				</l:content>
+			</l:VerticalLayout>
+			<l:VerticalLayout class="sapUiContentPadding" width="100%">
+				<l:content>
+					<List headerText="Chat">
+						<DisplayListItem label="Currently Offline"/>
+					</List>
+				</l:content>
+			</l:VerticalLayout>
+		</content>
+	</Page>
+</core:View>

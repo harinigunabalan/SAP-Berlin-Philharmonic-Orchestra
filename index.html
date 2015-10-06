@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+
+		<script src="resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m"
+				data-sap-ui-xx-bindingSyntax="complex"
+				data-sap-ui-resourceroots='{"com.sap": "./"}'
+				data-sap-ui-theme="sap_bluecrystal">
+		</script>
+		<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+		
+		<script>
+				sap.ui.localResources("view");
+				var app = new sap.m.App({initialPage:"index"});
+				var indexPage = sap.ui.view({id:"index", viewName:"com.sap.view.homepage", type:sap.ui.core.mvc.ViewType.XML});
+				var educationPage = sap.ui.view({id:"education", viewName:"com.sap.view.education", type:sap.ui.core.mvc.ViewType.XML});
+				var applicationPage = sap.ui.view({id:"application", viewName:"com.sap.view.application", type:sap.ui.core.mvc.ViewType.XML});
+				var collaborationPage = sap.ui.view({id:"collaboration", viewName:"com.sap.view.collaboration", type:sap.ui.core.mvc.ViewType.XML});
+				var profilePage = sap.ui.view({id:"profile", viewName:"com.sap.view.ViewProfile", type:sap.ui.core.mvc.ViewType.XML});
+				var openPositions = sap.ui.view({id:"openPositions", viewName:"com.sap.view.openPositions", type:sap.ui.core.mvc.ViewType.XML});
+				var MyApplications = sap.ui.view({id:"MyApplications", viewName:"com.sap.view.MyApplications", type:sap.ui.core.mvc.ViewType.XML});
+				var candidatePool = sap.ui.view({id:"candidatePool", viewName:"com.sap.view.candidatePool", type:sap.ui.core.mvc.ViewType.XML});
+				var login = sap.ui.view({id:"login", viewName:"com.sap.view.login", type:sap.ui.core.mvc.ViewType.XML});
+				var employeeHomePage = sap.ui.view({id:"employeeHomePage", viewName:"com.sap.view.EmployeeHomePage", type:sap.ui.core.mvc.ViewType.XML});
+				var Revenue = sap.ui.view({id:"Revenue", viewName:"com.sap.view.Revenue", type:sap.ui.core.mvc.ViewType.XML});
+				var competition = sap.ui.view({id:"competition", viewName:"com.sap.view.competition", type:sap.ui.core.mvc.ViewType.XML});
+				var classic = sap.ui.view({id:"classic", viewName:"com.sap.view.classic", type:sap.ui.core.mvc.ViewType.XML});
+				app.addPage(indexPage);
+				app.addPage(educationPage);
+				app.addPage(applicationPage);
+				app.addPage(collaborationPage);
+				app.addPage(profilePage);
+				app.addPage(openPositions);
+				app.addPage(MyApplications);
+				app.addPage(candidatePool);
+				app.addPage(login);
+				app.addPage(employeeHomePage);
+				app.addPage(Revenue);
+				app.addPage(competition);
+				app.addPage(classic);
+				app.placeAt("content");
+		</script>
+	</head>
+	<body class="sapUiBody" role="application">
+		<div id="content"></div>
+	</body>
+</html>

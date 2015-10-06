@@ -1,0 +1,44 @@
+<core:View controllerName="com.sap.view.competition" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" 	xmlns:l="sap.ui.layout" >
+	<Page title="Welcome to Berliner Philharmoniker - DIGI TALENT SEARCH MUSICIAN COMPETITION, 2015!" showNavButton="true" navButtonPress="pressBackButton">
+		<content>
+		
+			<l:Splitter>
+				
+			<HBox justifyContent="Center">
+				<HBox>
+					<Image
+						src="/img/competition.jpg"
+						densityAware="false">
+						<layoutData>
+							<FlexItemData growFactor="1" />
+						</layoutData>
+					</Image>
+				</HBox>
+			</HBox>
+				
+				<Panel class="sapUiResponsiveContentPadding">	
+			
+				<Text id="dynamicDesc" text="The BERLINER PHILHARMONIKER is looking for some brightest talents across the world.
+				
+				Unsigned Only is a unique music competition designed for solo artists, bands, and singers all over the world who are not signed to a major label record company or any of its affiliates, subsidiaries, or imprints. The goal of Unsigned Only is to find an outstanding, talented performer: a band, singer, or solo artist...a newcomer or veteran...raw or polished - the gem that needs to be discovered. Unsigned Only is looking for the total package.
+
+Conceived of and produced by the team who bring you the prestigious International Songwriting Competition (ISC), 
+Unsigned Only is a fresh and novel approach to other music competitions. 
+Yes, it offers great prizes, recognition, exposure, and the chance to be heard by a group of judges consisting of high-profile recording artists and industry professionals. 
+But, Unsigned Only also takes it a step further and puts the Grand Prize winner in direct, personal contact with the influential record label executives who are the ultimate decision-makers. 
+For the first time ever, a music competition offers the Grand Prize winner the unprecedented opportunity to be mentored by a group of record company presidents, AR reps, and more. 
+This is a once-in-a-lifetime chance to directly network with the top echelon of record company professionals and get guidance, advice, feedback, and networking opportunities.
+				
+				"/>
+				
+		
+				</Panel>
+			
+		</l:Splitter>
+		
+			
+			
+		</content>
+	</Page>
+</core:View>

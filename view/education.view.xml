@@ -1,0 +1,139 @@
+<core:View controllerName="com.sap.view.education" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m"
+	xmlns:tile="sap.suite.ui.commons"
+	xmlns:l="sap.ui.layout"
+	height="100%">
+	<Page enableScrolling="false" title="Education" showNavButton="true" navButtonPress="pressBackButton">
+	<content>
+	<Panel>
+		<headerToolbar>
+			<Toolbar height="3rem">
+				<Title text="Courses"/>
+				<ToolbarSpacer />
+				<Button icon="sap-icon://drop-down-list" press="openSettings" />
+			</Toolbar>
+		</headerToolbar>
+		<content>
+			<ComboBox value="Instrument" selectionChange="changeInstrument">
+				<core:Item key="Violin" text="Violin" />
+				<core:Item key="Piano" text="Piano" />
+				<core:Item key="Guitar" text="Guitar" />
+			</ComboBox>
+		</content>
+	</Panel>
+	<Panel id="popCoursesPanel" visible="false">
+		<headerToolbar>
+			<Toolbar height="3rem">
+				<Title id="popular" text="Most Popular"/>
+				<ToolbarSpacer />
+			</Toolbar>
+		</headerToolbar>
+		<content>
+		<FlexBox justifyContent="Center">
+			<HBox>
+			<tile:GenericTile 
+				size="S" 
+				frameType="OneByOne"
+				press="pressClassic"
+				backgroundImage="/images/classic.jpg">
+				<tile:tileContent>
+					<tile:TileContent footer="August 21, 2013" size="S">
+						<tile:content>
+							<tile:NewsContent 
+								size="S" 
+								contentText="Classic">
+							</tile:NewsContent>
+						</tile:content>
+					</tile:TileContent>
+				</tile:tileContent>
+			</tile:GenericTile>
+
+			<tile:GenericTile 
+				size="S" 
+				frameType="OneByOne"
+				press="press"
+				backgroundImage="/images/modern.jpg">
+				<tile:tileContent>
+					<tile:TileContent footer="August 21, 2013" size="S">
+						<tile:content>
+							<tile:NewsContent 
+								size="S" 
+								contentText="Modern">
+							</tile:NewsContent>
+						</tile:content>
+					</tile:TileContent>
+				</tile:tileContent>
+			</tile:GenericTile>
+		</HBox>
+		</FlexBox>
+
+		</content>
+	</Panel>
+	<Panel>
+		<headerToolbar>
+			<Toolbar height="3rem">
+				<Title text="Most Popular"/>
+				<ToolbarSpacer />
+			</Toolbar>
+		</headerToolbar>
+		<content>
+		<FlexBox justifyContent="Center">
+			<HBox>
+			<tile:GenericTile 
+				size="S" 
+				frameType="OneByOne"
+				press="press"
+				backgroundImage="/images/piano.jpg">
+				<tile:tileContent>
+					<tile:TileContent footer="August 21, 2013" size="S">
+						<tile:content>
+							<tile:NewsContent 
+								size="S" 
+								contentText="Piano">
+							</tile:NewsContent>
+						</tile:content>
+					</tile:TileContent>
+				</tile:tileContent>
+			</tile:GenericTile>
+
+			<tile:GenericTile 
+				size="S" 
+				frameType="OneByOne"
+				press="press"
+				backgroundImage="/images/guitar.jpg">
+				<tile:tileContent>
+					<tile:TileContent footer="August 21, 2013" size="S">
+						<tile:content>
+							<tile:NewsContent 
+								size="S" 
+								contentText="Guitar">
+							</tile:NewsContent>
+						</tile:content>
+					</tile:TileContent>
+				</tile:tileContent>
+			</tile:GenericTile>
+
+			<tile:GenericTile 
+				size="S" 
+				frameType="OneByOne"
+				press="press"
+				backgroundImage="/images/drums.jpg">
+				<tile:tileContent>
+					<tile:TileContent footer="August 21, 2013" size="S">
+						<tile:content>
+							<tile:NewsContent 
+								size="S" 
+								contentText="Drums">
+							</tile:NewsContent>
+						</tile:content>
+					</tile:TileContent>
+				</tile:tileContent>
+			</tile:GenericTile>
+			</HBox>
+			</FlexBox>
+		</content>
+	</Panel>
+	</content>
+	</Page>
+</core:View>

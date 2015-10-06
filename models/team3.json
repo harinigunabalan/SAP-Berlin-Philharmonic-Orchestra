@@ -1,0 +1,202 @@
+{
+	"OpenPositions": [
+		{
+			"ProductId": "1239102",
+			"Name": "Violin Player",
+			"Category": "Projector",
+			"SupplierName": "Titanium",
+			"Description": "VIOLIN IS ONE OF THE TOUGHEST INSTRUMENTS TO LEARN. WE LOOK FOR AN EXPERIENCED VIOLIN PLAYER.",
+			"WeightMeasure": 1467,
+			"WeightUnit": "g",
+			"Price": 856.49,
+			"CurrencyCode": "EUR",
+			"Status": "Available",
+			"Quantity": 3,
+			"UoM": "PC",
+			"Width": 51,
+			"Depth": 42,
+			"Height": 18,
+			"DimUnit": "cm",
+			"ProductPicUrl": "http://www.stewartfamilychiro.com/attachments/Image/violin_pictures__5.jpg"
+		},
+		{
+			"ProductId": "2212-121-828",
+			"Name": "Senior Guitar Musician",
+			"Category": "Graphics Card",
+			"SupplierName": "Technocom",
+			"Description": "GUITAR IS ONE OF THE MOST LOVED INSTRUMENTAL MUSIC. A SENIOR GUITAR MUSICIAN IS NEEDED!",
+			"WeightMeasure": 321,
+			"WeightUnit": "g",
+			"Price": 81.7,
+			"CurrencyCode": "EUR",
+			"Status": "Discontinued",
+			"Quantity": 10,
+			"UoM": "PC",
+			"Width": 34,
+			"Depth": 14,
+			"Height": 2,
+			"DimUnit": "cm",
+			"ProductPicUrl": "http://www.dawsons.co.uk/media/catalog/product/cache/1/image/1200x/040ec09b1e35df139433887a97daa66f/b/t/bt2.jpg"
+		},
+		{
+			"ProductId": "K47322.1",
+			"Name": "Piano",
+			"Category": "Graphics Card",
+			"SupplierName": "Red Point Stores",
+			"Description": "AN EXPERIENCED PIANO PLAYER IS ENCOURAGED TO APPLY FOR THIS POST. CANDIDATES ACROSS THE WORLD CAN APPLY.",
+			"WeightMeasure": 588,
+			"WeightUnit": "g",
+			"Price": 219,
+			"CurrencyCode": "EUR",
+			"Status": "Out of Stock",
+			"Quantity": 25,
+			"UoM": "PC",
+			"Width": 34,
+			"Depth": 14,
+			"Height": 2,
+			"DimUnit": "cm",
+			"ProductPicUrl": "http://static.squarespace.com/static/51d349f6e4b085686832099b/t/51d3a4b7e4b0290bcc57260a/1372824759515/piano-s.jpg"
+		},
+		{
+			"ProductId": "22134T",
+			"Name": "Keyboard",
+			"Category": "Accessory",
+			"SupplierName": "Technocom",
+			"Description": "A VERY GOOD KEYBOARD PLAYER IS REQUIRED FOR OUR OSCHETRA!! MINIMUM EXPERIENCE: OVER 10 YEARS",
+			"WeightMeasure": 700,
+			"WeightUnit": "g",
+			"Price": 59,
+			"CurrencyCode": "EUR",
+			"Status": "Available",
+			"Quantity": 22,
+			"UoM": "PC",
+			"Width": 18,
+			"Depth": 19,
+			"Height": 21,
+			"DimUnit": "cm",
+			"ProductPicUrl": "http://www.keytarhq.com/images/arranger-music-keyboard.jpg"
+		},
+		{
+			"ProductId": "P1239823",
+			"Name": "Celesta",
+			"Category": "Accessory",
+			"SupplierName": "Technocom",
+			"Description": "CELESTA PLAYER IS REQUIRED FOR OUR ORCHESTRA TEAM. EXPERIENCED CANDIDATES ONLY!",
+			"WeightMeasure": 40,
+			"WeightUnit": "g",
+			"Price": 13.49,
+			"CurrencyCode": "EUR",
+			"Status": "Available",
+			"Quantity": 30,
+			"UoM": "PC",
+			"Width": 11,
+			"Depth": 11,
+			"Height": 3,
+			"DimUnit": "cm",
+			"ProductPicUrl": "https://www.pianoteq.com/images/pianos/celesta.jpg"
+		},
+		{
+			"ProductId": "214-121-828",
+			"Name": "Flutes",
+			"Category": "Accessory",
+			"SupplierName": "Red Point Stores",
+			"Description": "FLUTE MUSIC IS ONE OF THE MOST PLEASANT FORMS OF MUSIC. PASSIONATE FLUTE MUSICIANS ARE ENCOURAGED TO APPLY",
+			"WeightMeasure": 1289,
+			"WeightUnit": "g",
+			"Price": 78.99,
+			"CurrencyCode": "EUR",
+			"Status": "Discontinued",
+			"Quantity": 15,
+			"UoM": "PC",
+			"Width": 53,
+			"Depth": 34,
+			"Height": 7,
+			"DimUnit": "cm",
+			"ProductPicUrl": "http://dean-yang.com/images/slideshow/IMG_8665.jpg"
+		}
+	
+	],
+	"ProductCollectionStats": {
+		"Counts": {
+			"Total": 14,
+			"Weight": {
+				"Ok": 7,
+				"Heavy": 5,
+				"Overweight": 2
+			}
+		},
+		"Groups": {
+			"Category": {
+				"Projector": 1,
+				"Graphics Card": 2,
+				"Accessory": 4,
+				"Printer": 2,
+				"Monitor": 3,
+				"Laptop": 1,
+				"Keyboard": 1
+			},
+			"SupplierName": {
+				"Titanium": 3,
+				"Technocom": 3,
+				"Red Point Stores": 5,
+				"Very Best Screens": 3
+			}
+		},
+		"Filters": [
+			{
+				"type": "Category",
+				"values": [
+					{
+						"text": "Projector",
+						"data": 1
+					},
+					{
+						"text": "Graphics Card",
+						"data": 2
+					},
+					{
+						"text": "Accessory",
+						"data": 4
+					},
+					{
+						"text": "Printer",
+						"data": 2
+					},
+					{
+						"text": "Monitor",
+						"data": 3
+					},
+					{
+						"text": "Laptop",
+						"data": 1
+					},
+					{
+						"text": "Keyboard",
+						"data": 1
+					}
+				]
+			},
+			{
+				"type": "SupplierName",
+				"values": [
+					{
+						"text": "Titanium",
+						"data": 3
+					},
+					{
+						"text": "Technocom",
+						"data": 3
+					},
+					{
+						"text": "Red Point Stores",
+						"data": 5
+					},
+					{
+						"text": "Very Best Screens",
+						"data": 3
+					}
+				]
+			}
+		]
+	}
+}

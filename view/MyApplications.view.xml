@@ -1,0 +1,65 @@
+<core:View controllerName="com.sap.view.MyApplications" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:tile="sap.suite.ui.commons"
+	height="100%">
+	<Page enableScrolling="false" title="Application" showNavButton="true" navButtonPress="pressBackButton">
+	<content>
+	
+	<Panel>
+		<headerToolbar>
+			<Toolbar height="3rem">
+				<Title text="My Applications"/>
+				<ToolbarSpacer />
+				<Button icon="sap-icon://drop-down-list" press="openSettings" />
+			</Toolbar>
+		</headerToolbar>
+		<content>
+		
+		<Table id="idProductsTable"
+		inset="false">
+		<columns>
+			<Column	width="5em">
+				<Text text="Id" />
+			</Column>
+			<Column	width="12em">
+				<Text text="JobName" />
+			</Column>
+			<Column	width="12em">
+				<Text text="Applied On" />
+			</Column>
+			<Column	width="12em">
+				<Text text="Contact" />
+			</Column>
+			<Column	width="12em">
+				<Text text="Status" />
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem>
+				<cells>
+					<Text text="1" />
+					<Text text="Violin Expert" />
+					<Text text="12-12-2014" />
+					<Text text="test@expert.com" />
+					<Text text="Failed" />
+				</cells>
+			</ColumnListItem>
+			<ColumnListItem>
+				<cells>
+					<Text text="2" />
+					<Text text="Violin Teacher" />
+					<Text text="12-12-2013" />
+					<Text text="test@expert.com" />
+					<Text text="Failed" />
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+		
+		</content>
+	</Panel>
+		
+	</content>
+	</Page>
+</core:View>

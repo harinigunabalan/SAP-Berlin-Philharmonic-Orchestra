@@ -1,0 +1,28 @@
+<core:View controllerName="com.sap.view.login" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m"
+	xmlns:tile="sap.suite.ui.commons"
+	xmlns:l="sap.ui.layout"
+	height="100%">
+	<Page title="Login Page">
+		<l:VerticalLayout width="100%">
+			<l:content>
+				<FlexBox alignItems="Center" justifyContent="Center" width="100%">
+					<items>
+						<Panel>
+							<Text class="sapUiSmallMargin" id="id" text="User Type:" textAlign="Right" textDirection="Inherit" wrapping="true" xmlns="sap.m"></Text>
+							
+							<ComboBox id="userType" value="Select one options">
+								<core:Item key="Public" text="Public" />
+								<core:Item key="Admin" text="Moderator" />
+							</ComboBox>
+						</Panel>
+						<Panel>
+							<Button press="btnLogin" text="Login"/>
+						</Panel>
+					</items>
+				</FlexBox>
+			</l:content>
+		</l:VerticalLayout>
+	</Page>
+</core:View>
